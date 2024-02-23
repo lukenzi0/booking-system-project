@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_PayHistory" targetNamespace="http://tempuri.org/DS_PayHistory.xsd" xmlns:mstns="http://tempuri.org/DS_PayHistory.xsd" xmlns="http://tempuri.org/DS_PayHistory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_PayHistory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DS_PayHistory" msprop:Generator_DataSetName="DS_PayHistory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BookingData" msprop:Generator_TableClassName="BookingDataDataTable" msprop:Generator_TableVarName="tableBookingData" msprop:Generator_TablePropName="BookingData" msprop:Generator_RowDeletingName="BookingDataRowDeleting" msprop:Generator_RowChangingName="BookingDataRowChanging" msprop:Generator_RowEvHandlerName="BookingDataRowChangeEventHandler" msprop:Generator_RowDeletedName="BookingDataRowDeleted" msprop:Generator_UserTableName="BookingData" msprop:Generator_RowChangedName="BookingDataRowChanged" msprop:Generator_RowEvArgName="BookingDataRowChangeEvent" msprop:Generator_RowClassName="BookingDataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:int" />
+              <xs:element name="PaymentType" msprop:Generator_ColumnVarNameInTable="columnPaymentType" msprop:Generator_ColumnPropNameInRow="PaymentType" msprop:Generator_ColumnPropNameInTable="PaymentTypeColumn" msprop:Generator_UserColumnName="PaymentType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DatePaid" msprop:Generator_ColumnVarNameInTable="columnDatePaid" msprop:Generator_ColumnPropNameInRow="DatePaid" msprop:Generator_ColumnPropNameInTable="DatePaidColumn" msprop:Generator_UserColumnName="DatePaid" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateDue" msprop:Generator_ColumnVarNameInTable="columnDateDue" msprop:Generator_ColumnPropNameInRow="DateDue" msprop:Generator_ColumnPropNameInTable="DateDueColumn" msprop:Generator_UserColumnName="DateDue" type="xs:dateTime" />
+              <xs:element name="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" msprop:Generator_UserColumnName="StartDate" type="xs:dateTime" />
+              <xs:element name="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" msprop:Generator_UserColumnName="EndDate" type="xs:dateTime" />
+              <xs:element name="RoomId" msprop:Generator_ColumnVarNameInTable="columnRoomId" msprop:Generator_ColumnPropNameInRow="RoomId" msprop:Generator_ColumnPropNameInTable="RoomIdColumn" msprop:Generator_UserColumnName="RoomId" type="xs:int" />
+              <xs:element name="BusinessName" msprop:Generator_ColumnVarNameInTable="columnBusinessName" msprop:Generator_ColumnPropNameInRow="BusinessName" msprop:Generator_ColumnPropNameInTable="BusinessNameColumn" msprop:Generator_UserColumnName="BusinessName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PrimaryContact" msprop:Generator_ColumnVarNameInTable="columnPrimaryContact" msprop:Generator_ColumnPropNameInRow="PrimaryContact" msprop:Generator_ColumnPropNameInTable="PrimaryContactColumn" msprop:Generator_UserColumnName="PrimaryContact">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SecondaryContact" msprop:Generator_ColumnVarNameInTable="columnSecondaryContact" msprop:Generator_ColumnPropNameInRow="SecondaryContact" msprop:Generator_ColumnPropNameInTable="SecondaryContactColumn" msprop:Generator_UserColumnName="SecondaryContact">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="11" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_UserColumnName="Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoomType" msprop:Generator_ColumnVarNameInTable="columnRoomType" msprop:Generator_ColumnPropNameInRow="RoomType" msprop:Generator_ColumnPropNameInTable="RoomTypeColumn" msprop:Generator_UserColumnName="RoomType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalCost" msprop:Generator_ColumnVarNameInTable="columnTotalCost" msprop:Generator_ColumnPropNameInRow="TotalCost" msprop:Generator_ColumnPropNameInTable="TotalCostColumn" msprop:Generator_UserColumnName="TotalCost" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
